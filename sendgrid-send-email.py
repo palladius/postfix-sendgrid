@@ -1,5 +1,6 @@
 #!/usr/bin/python
 
+import os
 from sendgrid import SendGridClient
 from sendgrid import Mail
 
@@ -15,7 +16,7 @@ sg = SendGridClient(USER, PASS, secure=True)
 # make a message object
 message = Mail()
 message.set_subject('message subject')
-message.set_html('<strong>HTML message body</strong>')
+message.set_html('<strong>HTML message body... cool!</strong>')
 message.set_text('If this email reaches you, clesarly user/pass are correct.')
 message.set_from('from.riccardo@example.com')
 
