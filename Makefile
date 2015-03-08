@@ -1,8 +1,9 @@
 # Makefile
 
-VER = 1.3
+VER = 0.8
 
-#  v1.3 Also sends email via python script... just to check for user/pass
+#  v0.8 Reflecting the fact it still doesnt work.
+#  v0.13 Also sends email via python script... just to check for user/pass
 #
 #
 

@@ -5,6 +5,17 @@ Synopsis
 Installa postfix/sendgrid using also supervisor (which i can remove when everything works)
 
 
+How To
+======
+
+* Enter `Dockerfile`
+* Change `SENDGRID_USER`, `SENDGRID_PASS`, ...
+* run `make run-riccardo`
+
+This will launch a python script to send a test email to see if user and pass are correct.
+It also launched supervisord which, among other things, will launch postfix.
+Postfix is still not running very well, hence version < 1.0
+
 Commands
 ========
 
