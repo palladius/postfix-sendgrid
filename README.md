@@ -17,27 +17,18 @@ It also launched supervisord which, among other things, will launch postfix.
 Postfix is still not running very well, hence version < 1.0
 
 Commands
-========
-
-* `/config-postfix.sh`: changes password in postfix
-* `/usr/bin/postfix start -D`
-
 Bugs
 ====
 
 Postfix still doesn't work, but python test script we're nearly there.
 
 
-Marco
-=====
+Thanks
+======
 
-Originally by Marco:
+Thanks to Marco Strina for the first Docker/Postfix/Sendgrid working version:
 
 * https://registry.hub.docker.com/u/mstrina/postfix_sendgrid/tags/manage/
-
-    # in /etc/postfix/main.cf
-    smtp_sasl_password_maps = static:mstrina:<HisPassword>
-
 
 URLs
 ====
